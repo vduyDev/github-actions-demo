@@ -28,9 +28,9 @@ public class Controller {
         return studentService.getStudents();
     }
 
-    @PostMapping("/students")
-    public Student saveStudent(@RequestBody Student student) {
-        return studentService.saveStudent(student);
-    }
+//    @PostMapping("/students")
+//    public Student saveStudent(@RequestBody Student student) {
+//        return studentService.saveStudent(student);
+//    }
 
 }
