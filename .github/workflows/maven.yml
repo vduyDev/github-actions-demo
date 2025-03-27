@@ -28,6 +28,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build Docker Image
-      run: docker build .
+      run: docker build -t vanduy41/myapp:latest
 
 
