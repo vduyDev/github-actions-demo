@@ -10,4 +10,4 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 COPY --from=builder /app/target/demo-github-actions-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
-ENTRYPOINT ["sh", "-c", "java -jar -Dspring.datasource.url=$SPRING_DATASOURCE_URL app.jar"]
+ENTRYPOINT ["sh", "-c", "java -jar  app.jar"]

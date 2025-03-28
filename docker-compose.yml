@@ -11,12 +11,10 @@ services:
       - "3306:3306"
 
   spring-app:
-    image: vanduy41/myapp
+    image: vanduy41/myapp:latest
     container_name: spring-container
     ports:
       - "8080:8080"
     restart: always
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-container:3306/demoDB
     depends_on:
       - mysql
