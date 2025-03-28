@@ -21,7 +21,7 @@ public class Controller {
 
     @GetMapping("/test")
     public String test() {
-        return "Hello Test!";
+        return "Hello Test staging!";
     }
     @GetMapping("/students")
     public List<Student> getStudentService() {
